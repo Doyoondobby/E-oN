@@ -17,7 +17,10 @@ def fun5():
     print('5. 현재 도서 목록 출력 \n')
 
 def fun6():
-    print('6. 프로그램 나가기 \n')
+    print('6. 저장하기 \n')
+
+def fun7():
+    print('7. 프로그램 나가기 \n')
 
 
 
@@ -28,9 +31,10 @@ while True:
     print(' 1. 도서 추가하기 ')
     print(' 2. 도서 검색하기 ')
     print(' 3. 도서 정보 수정하기 ')
-    print(' 4. 현재 도서 목록 출력 ')
-    print(' 5. 저장하기 ')
-    print(' 6. 나가기')
+    print(' 4. 도서 삭제하기 ')
+    print(' 5. 현재 도서 목록 출력 ')
+    print(' 6. 저장하기 ')
+    print(' 7. 프로그램 나가기')
 
     num = int(input('선택 : '))
 
@@ -44,10 +48,12 @@ while True:
     elif num == 3:
         a.modify()
     elif num == 4:
-        a.show()
+        a.delete()
     elif num == 5:
-        a.save()
+        a.show()
     elif num == 6:
-        fun6()
+        a.save()
+    elif num == 7:
+        fun7()
     else:
         print('{}는 없는 번호'.format(num))
